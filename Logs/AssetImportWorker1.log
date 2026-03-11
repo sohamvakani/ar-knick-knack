@@ -7,9 +7,9 @@ Darwin version:          25.3.0
 Architecture:            arm64
 Running under Rosetta:   NO
 Available memory:        18432 MB
-Date:                    2026-03-10T19:28:21Z
+Date:                    2026-03-11T18:31:53Z
 [Licensing::Module] Trying to connect to existing licensing client channel...
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-sohamvakani" at "2026-03-10T19:28:21.78026Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-sohamvakani" at "2026-03-11T18:31:53.302661Z"
 
 COMMAND LINE ARGUMENTS:
 /Applications/Unity/Hub/Editor/6000.3.7f1/Unity.app/Contents/MacOS/Unity
@@ -23,7 +23,9 @@ AssetImportWorker1
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-52696
+53616
+-licensingIpc
+LicenseClient-sohamvakani
 -job-worker-count
 5
 -background-job-worker-count
@@ -70,7 +72,7 @@ Successfully changed project path to: /Users/sohamvakani/dev/ar-knick-knack-IL-N
     "memorysetup-temp-allocator-size-gfx=262144"
 Player connection [8734224512]  Target information:
 
-Player connection [8734224512]  * "[IP] 10.11.167.244 [Port] 0 [Flags] 2 [Guid] 2787403811 [EditorId] 2787403811 [Version] 1048832 [Id] OSXEditor(0,Sohams-MacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+Player connection [8734224512]  * "[IP] 172.30.11.146 [Port] 0 [Flags] 2 [Guid] 1338800687 [EditorId] 1338800687 [Version] 1048832 [Id] OSXEditor(0,Sohams-MacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
 
 Player connection [8734224512] Host joined multi-casting on [225.0.0.222:54997]...
 Player connection [8734224512] Host joined alternative multi-casting on [225.0.0.222:34997]...
@@ -85,8 +87,8 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 1.13 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
+Refreshing native plugins compatible for Editor in 49.40 ms, found 5 plugins.
+Preloading 4 native plugins for Editor in 17.20 ms.
 Initialize engine version: 6000.3.7f1 (696ec25a53d1)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/6000.3.7f1/Unity.app/Contents/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path /Users/sohamvakani/dev/ar-knick-knack-IL-NYC/Assets
@@ -106,55 +108,55 @@ Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/6000.3.7f1/Unity.app/Contents/Resources/Scripting/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/6000.3.7f1/Unity.app/Contents/Resources/Scripting/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/6000.3.7f1/Unity.app/Contents/Resources/Scripting/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56332
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56748
 Begin MonoManager ReloadAssembly
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.17.4+4293ba1
+  Session Id:              c58ea596c67b45af8b288e425a1f3288
+  Correlation Id:          c05264f340b120ab1f9d9e3755519e80
+  External correlation Id: 4966586559877789046
+  Machine Id:              t4wg3RGX1vRR23N0k6vcOYVVfOg=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-sohamvakani" (connect: 0.00s, validation: 0.00s, handshake: 0.83s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-sohamvakani-notifications" at "2026-03-11T18:31:54.131326Z"
+[Licensing::Module] Licensing Background thread has ended after 0.83s
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/6000.3.7f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/6000.3.7f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Registered in 0.000644 seconds.
-[Licensing::Client] Handshaking with LicensingClient:
-  Version:                 1.17.4+4293ba1
-  Session Id:              e235ae83b55c488b9fb806875d27a494
-  Correlation Id:          c05264f340b120ab1f9d9e3755519e80
-  External correlation Id: 6125808306065433316
-  Machine Id:              t4wg3RGX1vRR23N0k6vcOYVVfOg=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-sohamvakani" (connect: 0.00s, validation: 0.00s, handshake: 0.73s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-sohamvakani-notifications" at "2026-03-10T19:28:22.510949Z"
-[Licensing::Module] Licensing Background thread has ended after 0.73s
-- Loaded All Assemblies, in  0.293 seconds
+Registered in 0.001582 seconds.
+- Loaded All Assemblies, in  0.341 seconds
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.347 seconds
-Domain Reload Profiling: 639ms
-	BeginReloadAssembly (67ms)
+- Finished resetting the current domain, in  0.359 seconds
+Domain Reload Profiling: 700ms
+	BeginReloadAssembly (114ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
 	RebuildCommonClasses (32ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (34ms)
-	LoadAllAssembliesAndSetupDomain (147ms)
-		LoadAssemblies (66ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (33ms)
+	LoadAllAssembliesAndSetupDomain (149ms)
+		LoadAssemblies (114ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (144ms)
-			TypeCache.Refresh (143ms)
+		AnalyzeDomain (146ms)
+			TypeCache.Refresh (145ms)
 				TypeCache.ScanAssembly (132ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (347ms)
+	FinalizeReload (359ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (308ms)
+		SetupLoadedEditorAssemblies (322ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (39ms)
 			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (78ms)
+			BeforeProcessingInitializeOnLoad (79ms)
 			ProcessInitializeOnLoadAttributes (127ms)
-			ProcessInitializeOnLoadMethodAttributes (61ms)
+			ProcessInitializeOnLoadMethodAttributes (74ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -170,8 +172,9 @@ Begin MonoManager ReloadAssembly
   Product: Unity Personal
   Type: Assigned
   Expiration: Unlimited
-- Loaded All Assemblies, in  0.461 seconds
-Refreshing native plugins compatible for Editor in 0.37 ms, found 1 plugins.
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.525 seconds
+Refreshing native plugins compatible for Editor in 0.81 ms, found 5 plugins.
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
 Package Manager log level set to [2]
@@ -180,25 +183,25 @@ Package Manager log level set to [2]
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.473 seconds
-Domain Reload Profiling: 934ms
-	BeginReloadAssembly (98ms)
+- Finished resetting the current domain, in  0.474 seconds
+Domain Reload Profiling: 999ms
+	BeginReloadAssembly (96ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (4ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (19ms)
-	RebuildCommonClasses (32ms)
+	RebuildCommonClasses (31ms)
 	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (26ms)
-	LoadAllAssembliesAndSetupDomain (291ms)
-		LoadAssemblies (171ms)
+	initialDomainReloadingComplete (25ms)
+	LoadAllAssembliesAndSetupDomain (361ms)
+		LoadAssemblies (228ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (162ms)
-			TypeCache.Refresh (132ms)
-				TypeCache.ScanAssembly (119ms)
-			BuildScriptInfoCaches (24ms)
-			ResolveRequiredComponents (4ms)
+		AnalyzeDomain (175ms)
+			TypeCache.Refresh (142ms)
+				TypeCache.ScanAssembly (124ms)
+			BuildScriptInfoCaches (25ms)
+			ResolveRequiredComponents (5ms)
 	FinalizeReload (474ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
@@ -206,118 +209,359 @@ Domain Reload Profiling: 934ms
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (2ms)
 			SetLoadedEditorAssemblies (2ms)
-			BeforeProcessingInitializeOnLoad (103ms)
-			ProcessInitializeOnLoadAttributes (248ms)
-			ProcessInitializeOnLoadMethodAttributes (29ms)
+			BeforeProcessingInitializeOnLoad (98ms)
+			ProcessInitializeOnLoadAttributes (255ms)
+			ProcessInitializeOnLoadMethodAttributes (27ms)
 			AfterProcessingInitializeOnLoad (1ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (2ms)
+WARNING: Shader Unsupported: 'Custom/PointCloudHeightClip' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Custom/PointCloudHeightClip' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Vuforia/Built-In/PointCloudHeightClip' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Vuforia/Built-In/PointCloudHeightClip' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'PointClouds/PointSplat' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'PointClouds/PointSplat' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Vuforia/Built-In/PointSplat' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
+WARNING: Shader Unsupported: 'Vuforia/Built-In/PointSplat' - All subshaders removed
+WARNING: Shader Did you use #pragma only_renderers and omit this platform?
+WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
 Launching external process: /Applications/Unity/Hub/Editor/6000.3.7f1/Unity.app/Contents/Helpers/UnityShaderCompiler
 Launched and connected shader compiler UnityShaderCompiler after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.31 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3893 unused Assets / (0.8 MB). Loaded Objects now: 4474.
-Memory consumption went from 94.8 MB to 94.0 MB.
-Total: 7.075708 ms (FindLiveObjects: 0.329375 ms CreateObjectMapping: 0.114375 ms MarkObjects: 5.800375 ms  DeleteObjects: 0.831083 ms)
+Refreshing native plugins compatible for Editor in 0.95 ms, found 5 plugins.
+Preloading 4 native plugins for Editor in 8.57 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3936 unused Assets / (1.3 MB). Loaded Objects now: 4627.
+Memory consumption went from 102.9 MB to 101.6 MB.
+Total: 6.658459 ms (FindLiveObjects: 0.406416 ms CreateObjectMapping: 0.105208 ms MarkObjects: 5.391709 ms  DeleteObjects: 0.754625 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 11854.392246 seconds.
-  path: Assets/Scenes/SampleScene.unity
-  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'dd7cd8ee365882c3c98a9e6159d7c8eb') in 0.0424455 seconds
+  Time since last request: 42882.820557 seconds.
+  path: Assets/CubeTopMaterial.mat
+  artifactKey: Guid(c5e20fe264b33437e96eee2f633711ca) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/CubeTopMaterial.mat using Guid(c5e20fe264b33437e96eee2f633711ca) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '49bc05628680a8d11c116cd046b9c871') in 0.053054583 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-[Licensing::Client] Successfully resolved entitlement details
-Thread 0x174547000 may have been prematurely finalized
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.534 seconds
-Refreshing native plugins compatible for Editor in 0.86 ms, found 5 plugins.
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.446 seconds
-Domain Reload Profiling: 981ms
-	BeginReloadAssembly (169ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (58ms)
-	RebuildCommonClasses (32ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (15ms)
-	LoadAllAssembliesAndSetupDomain (305ms)
-		LoadAssemblies (206ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (154ms)
-			TypeCache.Refresh (68ms)
-				TypeCache.ScanAssembly (55ms)
-			BuildScriptInfoCaches (79ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (446ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (353ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (2ms)
-			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (100ms)
-			ProcessInitializeOnLoadAttributes (222ms)
-			ProcessInitializeOnLoadMethodAttributes (25ms)
-			AfterProcessingInitializeOnLoad (1ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (2ms)
-WARNING: Shader Unsupported: 'Custom/PointCloudHeightClip' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Custom/PointCloudHeightClip' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Vuforia/Built-In/PointCloudHeightClip' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Vuforia/Built-In/PointCloudHeightClip' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'PointClouds/PointSplat' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'PointClouds/PointSplat' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Vuforia/Built-In/PointSplat' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Vuforia/Built-In/PointSplat' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-Refreshing native plugins compatible for Editor in 0.97 ms, found 5 plugins.
-Preloading 4 native plugins for Editor in 1058.27 ms.
-Unloading 36 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3963 unused Assets / (5.6 MB). Loaded Objects now: 4600.
-Memory consumption went from 119.8 MB to 114.2 MB.
-Total: 17.383209 ms (FindLiveObjects: 0.555666 ms CreateObjectMapping: 0.194750 ms MarkObjects: 10.189750 ms  DeleteObjects: 6.437292 ms)
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ab7a3e902fb48119ccbda12525f88191') in 0.00319075 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
-Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 41.390341 seconds.
+  path: Assets/Models/19-bench/BenchMaps
+  artifactKey: Guid(cb103057ced7c4e43b33e7e8f61d341f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/19-bench/BenchMaps using Guid(cb103057ced7c4e43b33e7e8f61d341f) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'f6d144d917a6b837c077f15612cb8489') in 0.002228209 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Models/19-bench
+  artifactKey: Guid(dd9a2e69c57de46cc8f61660f659f82a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/19-bench using Guid(dd9a2e69c57de46cc8f61660f659f82a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e1fe918a5ffa8413b16d1c13d41664a4') in 0.001206459 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000074 seconds.
+  path: Assets/Models/19-bench/BenchOBJ/Bench.obj
+  artifactKey: Guid(2c5c155f7c2b7425f8948ef1f9780772) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/19-bench/BenchOBJ/Bench.obj using Guid(2c5c155f7c2b7425f8948ef1f9780772) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '593a532d9a98627818fa64bfa2ced53f') in 0.035946125 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Models/19-bench/BenchMaps/Bench [Metalness].psd
+  artifactKey: Guid(3cd6f6856b55a4817814892f5de3e8ac) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/19-bench/BenchMaps/Bench [Metalness].psd using Guid(3cd6f6856b55a4817814892f5de3e8ac) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '274ad76cafb698304198b5c680d32624') in 0.026000708 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/Models/19-bench/BenchMaps/Bench [Normal].psd
+  artifactKey: Guid(be380b96190654a629d0a898e2f1d710) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/19-bench/BenchMaps/Bench [Normal].psd using Guid(be380b96190654a629d0a898e2f1d710) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'e036eb7892c65a9f8a43fca42193de8e') in 0.005410708 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000070 seconds.
+  path: Assets/Models/19-bench/BenchMaps/Bench [AlbedoM].psd
+  artifactKey: Guid(793941ed94eae4489a50b5dd0085a1ce) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/19-bench/BenchMaps/Bench [AlbedoM].psd using Guid(793941ed94eae4489a50b5dd0085a1ce) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c7c9d9770f0061ccb00421d429594272') in 0.005138833 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 199.102845 seconds.
+  path: Assets/Models/i8cotix2ujuo-Cap/Cap.obj
+  artifactKey: Guid(11e7141ea4c734f5490d926742019177) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/i8cotix2ujuo-Cap/Cap.obj using Guid(11e7141ea4c734f5490d926742019177) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'ad238a5cdc4b12424a3271ccfc119b58') in 0.017711875 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 52
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000122 seconds.
+  path: Assets/Models/i8cotix2ujuo-Cap/Cap.stl
+  artifactKey: Guid(7666ace53120f46bfa47882eccf52389) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/i8cotix2ujuo-Cap/Cap.stl using Guid(7666ace53120f46bfa47882eccf52389) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '409f040ab2a3410d392a3aa8c56c7bef') in 0.001946833 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/Models/i8cotix2ujuo-Cap
+  artifactKey: Guid(18bbb77183f46482fa4c7373efa59bdf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/i8cotix2ujuo-Cap using Guid(18bbb77183f46482fa4c7373efa59bdf) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'b4b053974d93574237609204cbda5ef9') in 0.00113075 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000099 seconds.
+  path: Assets/Models/i8cotix2ujuo-Cap/Cap.abc
+  artifactKey: Guid(03df86b6d6a7a4a2e99c6731b188973a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/i8cotix2ujuo-Cap/Cap.abc using Guid(03df86b6d6a7a4a2e99c6731b188973a) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '11ef8143fc92a62821d4feb159f9676c') in 0.001259125 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Models/i8cotix2ujuo-Cap/Cap.3ds
+  artifactKey: Guid(e09a6b08ce95441ff98fd900e9d98420) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/i8cotix2ujuo-Cap/Cap.3ds using Guid(e09a6b08ce95441ff98fd900e9d98420) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'c00b8c66bfcf287aaa38cad2717c2312') in 0.007047791 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 59
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Models/i8cotix2ujuo-Cap/Cap.dxf
+  artifactKey: Guid(af2326bad944241a58a8179951e1fc10) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/i8cotix2ujuo-Cap/Cap.dxf using Guid(af2326bad944241a58a8179951e1fc10) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '6199b7e15b66a71d59f5c1f37703ffca') in 0.010501917 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 45
+
+========================================================================
+Received Import Request.
+  Time since last request: 207.507135 seconds.
+  path: Packages/com.ptc.vuforia.engine/Vuforia/Materials/Built-In/BarcodeOutlineMaterial.mat
+  artifactKey: Guid(7aa08cbb9ece5462aaea2249d476a05e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.ptc.vuforia.engine/Vuforia/Materials/Built-In/BarcodeOutlineMaterial.mat using Guid(7aa08cbb9ece5462aaea2249d476a05e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0229bd3682afaa8b3ca40e09ba89b653') in 0.181660625 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000091 seconds.
+  path: Packages/com.ptc.vuforia.engine/Vuforia/Materials/Built-In/PointSplat.mat
+  artifactKey: Guid(1fca96da939c44b11914dae18406fa0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.ptc.vuforia.engine/Vuforia/Materials/Built-In/PointSplat.mat using Guid(1fca96da939c44b11914dae18406fa0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8b1767304584b7cc2fb2affc27c149f6') in 0.009039708 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000084 seconds.
+  path: Packages/com.ptc.vuforia.engine/Vuforia/Materials/Built-In/VideoBackground.mat
+  artifactKey: Guid(64b7af6597cb846c097f3c510cded5c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.ptc.vuforia.engine/Vuforia/Materials/Built-In/VideoBackground.mat using Guid(64b7af6597cb846c097f3c510cded5c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5861422f9e543fe213f47afc58b7e8db') in 0.006511583 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Packages/com.ptc.vuforia.engine/Vuforia/Materials/Built-In/GroundPlaneIndicator.mat
+  artifactKey: Guid(1d214ea2059394d59a1960df0cad1c62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.ptc.vuforia.engine/Vuforia/Materials/Built-In/GroundPlaneIndicator.mat using Guid(1d214ea2059394d59a1960df0cad1c62) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f36e0227c5c285083bf7948d227e7960') in 0.009559834 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Packages/com.ptc.vuforia.engine/Vuforia/Materials/URP/UnlitTexture_URP.mat
+  artifactKey: Guid(588a68088f1364b419f38a78121d3a3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.ptc.vuforia.engine/Vuforia/Materials/URP/UnlitTexture_URP.mat using Guid(588a68088f1364b419f38a78121d3a3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '75bb7254f7554773feffa1440bda7ff3') in 0.009138792 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000082 seconds.
+  path: Packages/com.ptc.vuforia.engine/Vuforia/Materials/Built-In/GroundPlaneReference.mat
+  artifactKey: Guid(b0fca12d4e61246cfa5f9a6d26e48004) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.ptc.vuforia.engine/Vuforia/Materials/Built-In/GroundPlaneReference.mat using Guid(b0fca12d4e61246cfa5f9a6d26e48004) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2b3aaad0a59a53bd22bbbc454020f406') in 0.007247375 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Packages/com.ptc.vuforia.engine/Vuforia/Materials/Built-In/GuideView2D.mat
+  artifactKey: Guid(ab44b980790e31f4c84c4c91cdab449a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.ptc.vuforia.engine/Vuforia/Materials/Built-In/GuideView2D.mat using Guid(ab44b980790e31f4c84c4c91cdab449a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'df9b1d3c968f143ce1472143be697086') in 0.006155167 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Packages/com.ptc.vuforia.engine/Vuforia/Materials/Built-In/CloudRecoTarget.mat
+  artifactKey: Guid(de1593a16346ab045974f1cd34fd831f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.ptc.vuforia.engine/Vuforia/Materials/Built-In/CloudRecoTarget.mat using Guid(de1593a16346ab045974f1cd34fd831f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '68c317c6981ca848110d7e0aa06a1350') in 0.005248708 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Packages/com.ptc.vuforia.engine/Vuforia/Materials/URP/DefaultValidationIconUndecidable_URP.mat
+  artifactKey: Guid(64eb5745e8abd4a3a9ae848525c44aab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.ptc.vuforia.engine/Vuforia/Materials/URP/DefaultValidationIconUndecidable_URP.mat using Guid(64eb5745e8abd4a3a9ae848525c44aab) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7fe7c77ad36d10dcfaf98f18425414ee') in 0.005191166 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Packages/com.ptc.vuforia.engine/Vuforia/Materials/URP/BarcodeOutlineMaterial_URP.mat
+  artifactKey: Guid(94257c524bead472cb0a3e2d584e093e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.ptc.vuforia.engine/Vuforia/Materials/URP/BarcodeOutlineMaterial_URP.mat using Guid(94257c524bead472cb0a3e2d584e093e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '15adeed77e8eed829453217c8b0efc1f') in 0.003999792 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000128 seconds.
+  path: Packages/com.ptc.vuforia.engine/Vuforia/Materials/URP/UnlitVertexColorHeightClip_URP.mat
+  artifactKey: Guid(98177a0e33add4585a5bd11d0eca500e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.ptc.vuforia.engine/Vuforia/Materials/URP/UnlitVertexColorHeightClip_URP.mat using Guid(98177a0e33add4585a5bd11d0eca500e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '36a977955ff15f8fea2b1c27c7f29a71') in 0.018435834 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Packages/com.ptc.vuforia.engine/Vuforia/Materials/URP/DepthMask_URP.mat
+  artifactKey: Guid(ce277212e4b7349c1898302513229891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.ptc.vuforia.engine/Vuforia/Materials/URP/DepthMask_URP.mat using Guid(ce277212e4b7349c1898302513229891) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '52ee22816661912b5e4a3d12cc3bb819') in 0.003829875 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Packages/com.ptc.vuforia.engine/Vuforia/Materials/Built-In/PointCloudHeightClip.mat
+  artifactKey: Guid(6a9650f1eec7b49beb8c87003f7fa376) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.ptc.vuforia.engine/Vuforia/Materials/Built-In/PointCloudHeightClip.mat using Guid(6a9650f1eec7b49beb8c87003f7fa376) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '022cd69962fac3caa3aea7338fdd9703') in 0.004329792 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Packages/com.ptc.vuforia.engine/Vuforia/Materials/URP/DefaultTarget_URP.mat
+  artifactKey: Guid(056842911aec04df791eb728b1dc43a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.ptc.vuforia.engine/Vuforia/Materials/URP/DefaultTarget_URP.mat using Guid(056842911aec04df791eb728b1dc43a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a80b2faee3d0278cc24a94b1b48842ce') in 0.003377667 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000107 seconds.
+  path: Assets/Models/Baseball bat/bat.obj
+  artifactKey: Guid(d30256348c8e64ca4a16a55b7ef60a03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Baseball bat/bat.obj using Guid(d30256348c8e64ca4a16a55b7ef60a03) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '418988bf3efd2bf5ed0859717362f2e1') in 0.0610875 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Packages/com.ptc.vuforia.engine/Vuforia/Materials/URP/PointSplatNoGeom_URP.mat
+  artifactKey: Guid(2cfc97beb1709498fa29080658e9ed4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.ptc.vuforia.engine/Vuforia/Materials/URP/PointSplatNoGeom_URP.mat using Guid(2cfc97beb1709498fa29080658e9ed4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '26c704b0e107be3cf9e51ce1f9712533') in 0.003586208 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Packages/com.ptc.vuforia.engine/Vuforia/Materials/URP/GroundPlaneIndicator_URP.mat
+  artifactKey: Guid(eb3438c395f1640ffae96283d96f3836) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.ptc.vuforia.engine/Vuforia/Materials/URP/GroundPlaneIndicator_URP.mat using Guid(eb3438c395f1640ffae96283d96f3836) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '476495256471f60a0d6ea8c13ed8fb26') in 0.006140708 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Packages/com.ptc.vuforia.engine/Vuforia/Materials/URP/PointSplat_URP.mat
+  artifactKey: Guid(0c11156b760b444e29d373bb81afc51d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.ptc.vuforia.engine/Vuforia/Materials/URP/PointSplat_URP.mat using Guid(0c11156b760b444e29d373bb81afc51d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9da3fc90b46465027032a16f0231d6b4') in 0.004191834 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000094 seconds.
+  path: Packages/com.ptc.vuforia.engine/Vuforia/Materials/Built-In/VertexLitWithZ.mat
+  artifactKey: Guid(093f0a378e68c4cc79732241b5e43799) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.ptc.vuforia.engine/Vuforia/Materials/Built-In/VertexLitWithZ.mat using Guid(093f0a378e68c4cc79732241b5e43799) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '23a27ceb2a77a8f1bd66527a7c2afc8e') in 0.004476125 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Packages/com.ptc.vuforia.engine/Vuforia/Materials/Built-In/PointSplatNoGeom.mat
+  artifactKey: Guid(b760efff14d10499f9165555c2de91b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.ptc.vuforia.engine/Vuforia/Materials/Built-In/PointSplatNoGeom.mat using Guid(b760efff14d10499f9165555c2de91b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '855ab413007244ee58e8f3f6298d606b') in 0.003662167 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 91.615968 seconds.
+  path: Assets/Materials/BenchMat.mat
+  artifactKey: Guid(39c37c39e15a3491eb944969348dfd23) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Materials/BenchMat.mat using Guid(39c37c39e15a3491eb944969348dfd23) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '28484f1c516d65dafb491f7bd00979f9') in 0.003398459 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.317290 seconds.
+  path: Assets/Models/BallCap/Cap.fbx
+  artifactKey: Guid(55410bd7ad6e245659f073cd90e06186) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/BallCap/Cap.fbx using Guid(55410bd7ad6e245659f073cd90e06186) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '48e5c7f13c4759b1e1c8be53994b3f13') in 0.009634208 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 54
+
+========================================================================
+Received Import Request.
+  Time since last request: 29.897641 seconds.
+  path: Assets/Models/BallCap/Cap.fbx
+  artifactKey: Guid(55410bd7ad6e245659f073cd90e06186) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Models/BallCap/Cap.fbx using Guid(55410bd7ad6e245659f073cd90e06186) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '84901ca8204c1a489b746014e1e70dd8') in 0.005325208 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 54
+
+========================================================================
+Received Import Request.
+  Time since last request: 210.919981 seconds.
+  path: Assets/Audio/197281__adrian_gomar__nagoya-baseballregion_21.wav
+  artifactKey: Guid(48d9c19314c81434b83dcde14ad68cc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/197281__adrian_gomar__nagoya-baseballregion_21.wav using Guid(48d9c19314c81434b83dcde14ad68cc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '180f0b8398f6f3c15a0c574a4c619d5e') in 0.126829666 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
 [Licensing::Client] Successfully resolved entitlement details
-Thread 0x16b573000 may have been prematurely finalized
+Thread 0x176787000 may have been prematurely finalized
+ADTM: Control thread waiting for realtime thread timed out, have to lock...
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.567 seconds
-Refreshing native plugins compatible for Editor in 1.32 ms, found 5 plugins.
+- Loaded All Assemblies, in  1.564 seconds
+Refreshing native plugins compatible for Editor in 1.09 ms, found 5 plugins.
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
@@ -325,115 +569,35 @@ Native extension for WebGL target not found
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.431 seconds
-Domain Reload Profiling: 1000ms
-	BeginReloadAssembly (191ms)
+- Finished resetting the current domain, in  0.495 seconds
+Domain Reload Profiling: 2060ms
+	BeginReloadAssembly (1164ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (8ms)
+		DisableScriptedObjects (6ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (63ms)
-	RebuildCommonClasses (32ms)
-	RebuildNativeTypeToScriptingClass (14ms)
-	initialDomainReloadingComplete (19ms)
-	LoadAllAssembliesAndSetupDomain (312ms)
-		LoadAssemblies (248ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (131ms)
-			TypeCache.Refresh (8ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (115ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (432ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (342ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (2ms)
-			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (99ms)
-			ProcessInitializeOnLoadAttributes (211ms)
-			ProcessInitializeOnLoadMethodAttributes (25ms)
-			AfterProcessingInitializeOnLoad (1ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (2ms)
-WARNING: Shader Unsupported: 'Custom/PointCloudHeightClip' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Custom/PointCloudHeightClip' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Vuforia/Built-In/PointCloudHeightClip' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Vuforia/Built-In/PointCloudHeightClip' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'PointClouds/PointSplat' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'PointClouds/PointSplat' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Vuforia/Built-In/PointSplat' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Vuforia/Built-In/PointSplat' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-Refreshing native plugins compatible for Editor in 1.02 ms, found 5 plugins.
-Preloading 4 native plugins for Editor in 8.71 ms.
-Unloading 35 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3963 unused Assets / (6.6 MB). Loaded Objects now: 4601.
-Memory consumption went from 122.5 MB to 115.9 MB.
-Total: 8.193875 ms (FindLiveObjects: 0.217667 ms CreateObjectMapping: 0.101291 ms MarkObjects: 5.220375 ms  DeleteObjects: 2.654125 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-[Licensing::Client] Successfully resolved entitlement details
-Thread 0x16b573000 may have been prematurely finalized
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.458 seconds
-Refreshing native plugins compatible for Editor in 0.95 ms, found 5 plugins.
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.426 seconds
-Domain Reload Profiling: 886ms
-	BeginReloadAssembly (127ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (4ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (37ms)
-	RebuildCommonClasses (33ms)
+		CreateAndSetChildDomain (1057ms)
+	RebuildCommonClasses (31ms)
 	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (17ms)
-	LoadAllAssembliesAndSetupDomain (269ms)
-		LoadAssemblies (188ms)
+	initialDomainReloadingComplete (18ms)
+	LoadAllAssembliesAndSetupDomain (340ms)
+		LoadAssemblies (256ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (126ms)
-			TypeCache.Refresh (6ms)
+		AnalyzeDomain (138ms)
+			TypeCache.Refresh (11ms)
 				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (113ms)
+			BuildScriptInfoCaches (116ms)
 			ResolveRequiredComponents (5ms)
-	FinalizeReload (427ms)
+	FinalizeReload (495ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (336ms)
+		SetupLoadedEditorAssemblies (393ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (2ms)
-			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (101ms)
-			ProcessInitializeOnLoadAttributes (205ms)
-			ProcessInitializeOnLoadMethodAttributes (22ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (123ms)
+			ProcessInitializeOnLoadAttributes (239ms)
+			ProcessInitializeOnLoadMethodAttributes (24ms)
 			AfterProcessingInitializeOnLoad (1ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -462,91 +626,11 @@ WARNING: Shader If subshaders removal was intentional, you may have forgotten tu
 WARNING: Shader Unsupported: 'Vuforia/Built-In/PointSplat' - All subshaders removed
 WARNING: Shader Did you use #pragma only_renderers and omit this platform?
 WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-Refreshing native plugins compatible for Editor in 1.06 ms, found 5 plugins.
-Preloading 4 native plugins for Editor in 8.61 ms.
-Unloading 35 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3963 unused Assets / (6.6 MB). Loaded Objects now: 4602.
-Memory consumption went from 125.4 MB to 118.8 MB.
-Total: 8.185542 ms (FindLiveObjects: 0.212750 ms CreateObjectMapping: 0.099916 ms MarkObjects: 5.184584 ms  DeleteObjects: 2.688042 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-[Licensing::Client] Successfully resolved entitlement details
-Thread 0x16b573000 may have been prematurely finalized
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.471 seconds
-Refreshing native plugins compatible for Editor in 0.94 ms, found 5 plugins.
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.422 seconds
-Domain Reload Profiling: 895ms
-	BeginReloadAssembly (131ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (38ms)
-	RebuildCommonClasses (33ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (17ms)
-	LoadAllAssembliesAndSetupDomain (279ms)
-		LoadAssemblies (199ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (127ms)
-			TypeCache.Refresh (8ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (112ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (422ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (333ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (2ms)
-			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (99ms)
-			ProcessInitializeOnLoadAttributes (206ms)
-			ProcessInitializeOnLoadMethodAttributes (22ms)
-			AfterProcessingInitializeOnLoad (1ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (2ms)
-WARNING: Shader Unsupported: 'Custom/PointCloudHeightClip' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Custom/PointCloudHeightClip' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Vuforia/Built-In/PointCloudHeightClip' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Vuforia/Built-In/PointCloudHeightClip' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'PointClouds/PointSplat' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'PointClouds/PointSplat' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Vuforia/Built-In/PointSplat' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Vuforia/Built-In/PointSplat' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-Refreshing native plugins compatible for Editor in 0.93 ms, found 5 plugins.
-Preloading 4 native plugins for Editor in 8.67 ms.
-Unloading 35 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3963 unused Assets / (6.6 MB). Loaded Objects now: 4603.
-Memory consumption went from 128.3 MB to 121.7 MB.
-Total: 7.777834 ms (FindLiveObjects: 0.207250 ms CreateObjectMapping: 0.102292 ms MarkObjects: 5.028459 ms  DeleteObjects: 2.439292 ms)
+Refreshing native plugins compatible for Editor in 1.27 ms, found 5 plugins.
+Preloading 4 native plugins for Editor in 8.95 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3934 unused Assets / (0.8 MB). Loaded Objects now: 4678.
+Memory consumption went from 110.1 MB to 109.3 MB.
+Total: 6.598125 ms (FindLiveObjects: 0.237666 ms CreateObjectMapping: 0.111750 ms MarkObjects: 5.486125 ms  DeleteObjects: 0.762083 ms)
 
 Prepare: number of updated asset objects reloaded= 0
