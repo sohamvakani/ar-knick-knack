@@ -3,12 +3,25 @@ using UnityEngine.Networking;
 using TMPro;
 using System.Collections;
 
-public class WeatherDisplay_NYC : MonoBehaviour
+public class WeatherDisplay : MonoBehaviour
 {
     public TextMeshPro weatherText;
-    private string apiKey = "3696ea76f38f3467c41db66bb0573e1c";
+    private string apiKey;
     private string city = "New York";
     private float updateInterval = 600f;
+
+    void Awake()
+    {
+        TextAsset configFile = Resources.Load<TextAsset>("config");
+        if (configFile != null)
+        {
+            apiKey = configFile.text.Trim();
+        }
+        else
+        {
+            Debug.LogError("Config file not found!");
+        }
+    }
 
     void Start()
     {
@@ -29,34 +42,73 @@ public class WeatherDisplay_NYC : MonoBehaviour
         {
             yield return request.SendWebRequest();
 
+            Debug.Log($"Weather API Response Code: {request.responseCode}");
+            Debug.Log($"Weather API Response: {request.downloadHandler.text}");
+
             if (request.result == UnityWebRequest.Result.Success)
             {
-                WeatherResponse_NYC weather = JsonUtility.FromJson<WeatherResponse_NYC>(request.downloadHandler.text);
-                weatherText.text = $"NYC Weather\n{weather.main.temp}°F\n{weather.weather[0].description}";
+                WeatherResponse weather = JsonUtility.FromJson<WeatherResponse>(request.downloadHandler.text);
+                float temp = weather.main.temp;
+                string description = weather.weather[0].description;
+                string mainCondition = weather.weather[0].main.ToLower();
+
+                weatherText.text = $"Chicago Weather\n{temp}°F\n{description}";
+                UpdateTextColor(mainCondition);
             }
             else
             {
+                Debug.LogError($"Weather request failed: {request.error}");
                 weatherText.text = "Weather\nUnavailable";
+                weatherText.color = Color.white;
             }
+        }
+    }
+
+    void UpdateTextColor(string condition)
+    {
+        if (condition.Contains("rain") || condition.Contains("drizzle") || condition.Contains("thunderstorm"))
+        {
+            // Blue for rain
+            weatherText.color = new Color(0.3f, 0.6f, 1f);
+        }
+        else if (condition.Contains("snow"))
+        {
+            // White for snow
+            weatherText.color = Color.white;
+        }
+        else if (condition.Contains("clear"))
+        {
+            // Yellow for sunny
+            weatherText.color = new Color(1f, 0.9f, 0.2f);
+        }
+        else if (condition.Contains("cloud"))
+        {
+            // Grey for cloudy
+            weatherText.color = new Color(0.7f, 0.7f, 0.7f);
+        }
+        else
+        {
+            weatherText.color = Color.white;
         }
     }
 }
 
 [System.Serializable]
-public class WeatherResponse_NYC
+public class WeatherResponse
 {
-    public Main_NYC main;
-    public Weather_NYC[] weather;
+    public Main main;
+    public Weather[] weather;
 }
 
 [System.Serializable]
-public class Main_NYC
+public class Main
 {
     public float temp;
 }
 
 [System.Serializable]
-public class Weather_NYC
+public class Weather
 {
     public string description;
+    public string main;
 }

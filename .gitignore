@@ -43,3 +43,7 @@ Thumbs.db
 # Vuforia
 Assets/StreamingAssets/Vuforia/*.dat
 Assets/StreamingAssets/Vuforia/*.xml
+
+#API Key
+Assets/Resources/config.txt
+Assets/Resources/config.txt.meta
