@@ -48,47 +48,13 @@ public class WeatherDisplay : MonoBehaviour
             if (request.result == UnityWebRequest.Result.Success)
             {
                 WeatherResponse weather = JsonUtility.FromJson<WeatherResponse>(request.downloadHandler.text);
-                float temp = weather.main.temp;
-                string description = weather.weather[0].description;
-                string mainCondition = weather.weather[0].main.ToLower();
-
-                weatherText.text = $"Chicago Weather\n{temp}°F\n{description}";
-                UpdateTextColor(mainCondition);
+                weatherText.text = $"Chicago Weather\n{weather.main.temp}°F\n{weather.weather[0].description}";
             }
             else
             {
                 Debug.LogError($"Weather request failed: {request.error}");
                 weatherText.text = "Weather\nUnavailable";
-                weatherText.color = Color.white;
             }
-        }
-    }
-
-    void UpdateTextColor(string condition)
-    {
-        if (condition.Contains("rain") || condition.Contains("drizzle") || condition.Contains("thunderstorm"))
-        {
-            // Blue for rain
-            weatherText.color = new Color(0.3f, 0.6f, 1f);
-        }
-        else if (condition.Contains("snow"))
-        {
-            // White for snow
-            weatherText.color = Color.white;
-        }
-        else if (condition.Contains("clear"))
-        {
-            // Yellow for sunny
-            weatherText.color = new Color(1f, 0.9f, 0.2f);
-        }
-        else if (condition.Contains("cloud"))
-        {
-            // Grey for cloudy
-            weatherText.color = new Color(0.7f, 0.7f, 0.7f);
-        }
-        else
-        {
-            weatherText.color = Color.white;
         }
     }
 }

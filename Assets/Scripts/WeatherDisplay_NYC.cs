@@ -3,7 +3,7 @@ using UnityEngine.Networking;
 using TMPro;
 using System.Collections;
 
-public class WeatherDisplay : MonoBehaviour
+public class WeatherDisplay_NYC : MonoBehaviour
 {
     public TextMeshPro weatherText;
     private string apiKey;
@@ -91,24 +91,4 @@ public class WeatherDisplay : MonoBehaviour
             weatherText.color = Color.white;
         }
     }
-}
-
-[System.Serializable]
-public class WeatherResponse
-{
-    public Main main;
-    public Weather[] weather;
-}
-
-[System.Serializable]
-public class Main
-{
-    public float temp;
-}
-
-[System.Serializable]
-public class Weather
-{
-    public string description;
-    public string main;
 }
