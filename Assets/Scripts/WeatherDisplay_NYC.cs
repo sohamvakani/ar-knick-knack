@@ -52,7 +52,7 @@ public class WeatherDisplay_NYC : MonoBehaviour
                 string description = weather.weather[0].description;
                 string mainCondition = weather.weather[0].main.ToLower();
 
-                weatherText.text = $"Chicago Weather\n{temp}°F\n{description}";
+                weatherText.text = $"New York Weather\n{temp}°F\n{description}";
                 UpdateTextColor(mainCondition);
             }
             else

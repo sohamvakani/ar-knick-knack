@@ -35,7 +35,7 @@ The stadium is the centerpiece, with the other models arranged around it to evok
 
 An ambient crowd/ballpark sound loops quietly in the background to reinforce the atmosphere.
 
-**[SCREENSHOT: Wrigley cube with all 5 models visible on top face]**
+![Wrigley cube with all 5 models visible on top face](docs/images/screenshot_wrigley-models.png)
 
 Each side of the Wrigley cube shows a different information panel:
 
@@ -46,6 +46,8 @@ Each side of the Wrigley cube shows a different information panel:
 - **Fun Fact Panel** — A static panel with historical information about Wrigley Field.
 
 **[SCREENSHOT: Wrigley cube side panels showing weather and time]**
+![Wrigley cube side panels showing weather](docs/images/screenshot_chicago_weather.png)
+![Wrigley cube side panel showing time](docs/images/screenshot_chicago_time.png)
 
 ---
 
@@ -63,7 +65,7 @@ The NYC cube uses another merge cube as its tracking target — each face of the
 
 The Statue of Liberty and skyscraper anchor the NYC scene visually, while the hot dog is a nod to the classic NYC street food experience. The chair was modeled in Blender using box modeling techniques with extruded legs and a backrest.
 
-**[SCREENSHOT: NYC dice cube with all models visible on top face]**
+![NYC dice cube with all models visible on top face](docs/images/screenshot_nyc_models.png)
 
 Each side of the NYC cube mirrors the same panel structure as Wrigley:
 
@@ -72,7 +74,8 @@ Each side of the NYC cube mirrors the same panel structure as Wrigley:
 - **Time Panel** — Current local time in New York (Eastern Time) with day/night color coding
 - **Fun Fact Panel** — Key facts about New York City
 
-**[SCREENSHOT: NYC cube side panels]**
+![NYC cube side panels](docs/images/NYC_Sidepanel1.png)
+![NYC cube side panels](docs/images/NYC_Sidepanel2.png)
 
 ---
 
@@ -80,7 +83,7 @@ Each side of the NYC cube mirrors the same panel structure as Wrigley:
 
 When both cubes are brought close together in the webcam view, a floating text message — **"Chicago meets NYC!"** — appears between them in 3D space, facing the camera. This is a Level 5 interaction triggered by proximity detection between both Multi Targets.
 
-**[SCREENSHOT: Both cubes close together with floating text visible]**
+![Both cubes close together with floating text visible](docs/images/NYC_Chicago_meet.png)
 
 ---
 
