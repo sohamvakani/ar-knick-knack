@@ -179,3 +179,7 @@ The floating "Chicago meets NYC!" text appears correctly in the Scene view but r
 **AI:** I used Claude (Anthropic) extensively throughout this project as a technical resource. Claude helped with debugging Vuforia multi-target setup, writing and iterating on the C# scripts for weather display, time zones, day/night detection, and proximity detection. Claude also helped navigate the git history rewriting issue, model format conversion troubleshooting, and finding appropriate 3D model sources online. I found it most useful as a debugging partner describing an error and working through the cause systematically rather than as a code generator. All code was reviewed, understood, and integrated by me.
 
 ---
+
+## Demo Video 
+
+You can view my demo video [here](https://mailuc-my.sharepoint.com/:v:/g/personal/vakanisa_mail_uc_edu/IQDb-i98zCjfRoAZrHjq7EyaAXg13slav4jBpTIuLXjyut4?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=hggNro) 
